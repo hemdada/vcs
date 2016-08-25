@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="highscoredb" type="DataService" springFile="highscoredb.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.vcs.highscoredb.Table101">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="sdsdsds" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.runtime.data.expression.QueryFilter">
+            <element name="attributeName" typeRef="java.lang.String" allowNull="true"/>
+            <element name="attributeValue" allowNull="true"/>
+            <element name="filterCondition" typeRef="java.lang.String" allowNull="true"/>
+            <element name="attributeType" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.runtime.data.model.CustomProcedure">
+            <element name="procedureParams" typeRef="com.wavemaker.runtime.data.model.CustomProcedureParam" isList="true" allowNull="true"/>
+            <element name="procedureStr" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.vcs.highscoredb.Table11">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column5" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.runtime.data.model.CustomQuery">
+            <element name="queryParams" typeRef="com.wavemaker.runtime.data.model.CustomQueryParam" isList="true" allowNull="true"/>
+            <element name="nativeSql" typeRef="java.lang.Boolean" allowNull="true"/>
+            <element name="queryStr" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>
